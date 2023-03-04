@@ -59,6 +59,7 @@ img{display: block;}
 
 .header{
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container{
@@ -141,6 +142,8 @@ img{display: block;}
     background-size: cover;
     background-position: center;
     padding: 180px 0;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .hero-container{
@@ -180,6 +183,8 @@ img{display: block;}
     height: 56px;
     min-width: 169px;
 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
 }
 
 .hero-btn:hover, .hero-btn:focus{
@@ -211,10 +216,13 @@ img{display: block;}
     height: 112px;
     background: var(--cloud);
     margin-bottom: 8px;
+    border-radius: 4px;
+
 }
 
 .feature-icon svg{
-    height: calc(112px - 48px);
+    height: 64px;
+    width: 64px;
 }
 
 .features-list-item-heading{
@@ -327,9 +335,10 @@ img{display: block;}
     flex-direction: row;
     justify-content: space-around;
     margin-top: 8px;
+    padding: 0 24px;
 }
 
-.team-social-list-item{
+.team-social-list-item a{
     border-radius: 50%;
     background: var(--iris);
     width: 40px;
@@ -339,7 +348,7 @@ img{display: block;}
     justify-content: center;
 }
 
-.team-social-list-item:is(:hover, :focus){
+.team-social-list-item a:is(:hover, :focus){
     background: var(--ocean);
 }
 
@@ -369,23 +378,24 @@ img{display: block;}
     gap:24px;
 }
 
-.customers-list-item{
-    width: calc((100% - 5*24px)/6);
+.customers-list-item a{
+    width: 168px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
-    padding: 23px 0;
+    height: 88px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.customers-list-item:is(:hover, :focus){
+.customers-list-item a:is(:hover, :focus){
     border-color: var(--ocean);
 }
 
 .customers-list-item-logo{
     height: 45px;
     max-width: 85px;
+    fill:#8E8F99;
 }
 
 .customers-list-item:is(:hover, :focus) .customers-list-item-logo{
@@ -428,10 +438,13 @@ img{display: block;}
     flex-direction: row;
     gap: 16px;
 }
-
 .footer-social-list-item{
+    height: 40px;
+    width: 40px;
+}
+
+.footer-social-list-item a{
     border-radius: 50%;
-    background: var(--iris);
     width: 40px;
     height: 40px;
     display: flex;
@@ -439,7 +452,7 @@ img{display: block;}
     justify-content: center;
     background: rgba(255, 255, 255, 0.1);;
 }
-.footer-social-list-item:is(:hover, :focus){
+.footer-social-list-item a:is(:hover, :focus){
 background: #31D0AA;
 }
 
