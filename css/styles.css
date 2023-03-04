@@ -5,6 +5,7 @@
     --iris: #4D5AE5;
     --cornflower: #E7E9FC;
     --ocean: #404BBF;
+    --cloud:#F4F4FD;
 }
  body{
     font-family: 'Roboto', sans-serif;
@@ -134,7 +135,11 @@ img{display: block;}
 
 /*- HERO -*/
 .hero{
-    background: var(--navy-blue);
+    background-color: var(--navy-blue);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 180px 0;
 }
 
@@ -196,6 +201,20 @@ img{display: block;}
 }
 .features-list-item{
     width: calc((100% - 3*24px)/4);
+}
+
+.feature-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    background: var(--cloud);
+    margin-bottom: 8px;
+}
+
+.feature-icon svg{
+    height: calc(112px - 48px);
 }
 
 .features-list-item-heading{
@@ -301,6 +320,29 @@ img{display: block;}
     text-align: center;
     letter-spacing: 0.02em;
 } 
+
+.team-social-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 8px;
+}
+
+.team-social-list-item{
+    border-radius: 50%;
+    background: var(--ocean);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-social-list-item svg{
+    height: 16px;
+    width: 16px;
+}
 /* -- /TEAM -- */
 
 /*-- FOOTER --*/
