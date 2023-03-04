@@ -331,12 +331,16 @@ img{display: block;}
 
 .team-social-list-item{
     border-radius: 50%;
-    background: var(--ocean);
+    background: var(--iris);
     width: 40px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.team-social-list-item:is(:hover, :focus){
+    background: var(--ocean);
 }
 
 .team-social-list-item svg{
@@ -345,17 +349,103 @@ img{display: block;}
 }
 /* -- /TEAM -- */
 
+/* --CUSTOMERS --*/
+.customers{
+    padding: 130px 0 120px 0;
+}
+
+.customers-title{
+    margin-bottom: 72px;
+    font-size: 36px;
+    line-height: 1.12;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+.customers-list{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    gap:24px;
+}
+
+.customers-list-item{
+    width: calc((100% - 5*24px)/6);
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    padding: 23px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customers-list-item:is(:hover, :focus){
+    border-color: var(--ocean);
+}
+
+.customers-list-item-logo{
+    height: 45px;
+    max-width: 85px;
+}
+
+.customers-list-item:is(:hover, :focus) .customers-list-item-logo{
+    fill: var(--ocean) ;
+}
+
+
+/* --/CUSTOMERS --*/
+
 /*-- FOOTER --*/
 .footer-logo-color{
     color: #F4F4FD;
 }
 
-
-
 .footer{
     background: var(--navy-blue);
     padding: 100px 0px;
 
+}
+.footer-container{
+    display: flex;
+    flex-direction: row;
+}
+.footer-social{
+    margin-left: 120px;
+}
+
+.footer-social-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.footer-social-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.footer-social-list-item{
+    border-radius: 50%;
+    background: var(--iris);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);;
+}
+.footer-social-list-item:is(:hover, :focus){
+background: #31D0AA;
+}
+
+.footer-social-list-item-icon{
+    height: 24px;
+    max-width: 24px;
 }
 
 .footer-text{
