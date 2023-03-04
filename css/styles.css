@@ -333,7 +333,7 @@ img{display: block;}
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 8px;
     padding: 0 24px;
 }
@@ -398,7 +398,7 @@ img{display: block;}
     fill:#8E8F99;
 }
 
-.customers-list-item:is(:hover, :focus) .customers-list-item-logo{
+.customers-list-item a:is(:hover, :focus) .customers-list-item-logo{
     fill: var(--ocean) ;
 }
 
@@ -539,12 +539,13 @@ background: #31D0AA;
     
 }
 
-.jobs-list-item {
+.jobs-list-item a{
     width: calc((100% - 2*24px)/3);
     text-align: left;
+
 }
 
-.jobs-list-item:is(:hover, :focus) {
+.jobs-list-item a:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
